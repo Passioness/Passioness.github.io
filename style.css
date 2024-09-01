@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background: #333;
+}
+
+.navbar .logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #012e29;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: url('Workout.png') no-repeat center center/cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 400px;
+    margin-left: auto;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(44, 42, 42, 0.8);
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff7b61;
+    transform: scale(1.05);
+}
+
+.picture1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive-img {
+    max-width: 90%;
+    height:auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .banner {
+        justify-content: flex-start;
+        padding: 60px;
+    }
+
+    .content {
+        max-width: 40%;
+        margin: auto;
+    }
+
+    .responsive-img {
+        max-width: 50%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 15px 0;
+    }
+
+    .navbar .logo {
+        width: 100px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional styling for better button positioning on smaller screens */
+button span {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Program</title>
+    <link rel="stylesheet" href="styleBMInor(man).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Retrieve the BMI value from the URL
+        window.onload = function() {
+            const bmi = getQueryParameter('bmi');
+            if (bmi) {
+                document.getElementById('bmiResult').innerText = `ค่า BMI ของคุณคือ: ${bmi}`;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="PasPage1.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 id="bmiResult" class="fade-in"></h1>
+            <img src="bodybuilder2.img" alt="BMI Status Image" class="bmi-image">
+            <div class="banner-text">
+                <h1 class="fade-in">ค่า BMI ของคุณ : ปกติ</h1>
+                <h2 class="fade-in">ตารางการสร้างกล้ามเนื้อ</h2>
+                <hr style="border: 1px solid #000000;">
+            </div>
+
+            <!-- Fitness Schedules -->
+            <div class="fitness-schedule">
+                <div class="program">
+                    <h3 class="fade-in">ตารางฟิตเนส ผู้ชาย โปรแกรมที่ 1️</h3>
+                    <ul>
+                        <li>• วันจันทร์ - Chest Day</li>
+                        <li>• วันอังคาร - Back Day</li>
+                        <li>• วันพุธ - Shoulder Day</li>
+                        <li>• วันพฤหัสบดี - Arm Day</li>
+                        <li>• วันศุกร์ - Leg Day</li>
+                        <li>• วันเสาร์ - พัก</li>
+                        <li>• วันอาทิตย์ - พัก</li>
+                    </ul>
+                </div>
+                <div class="program">
+                    <h3 class="fade-in">ตารางฟิตเนส ผู้ชาย โปรแกรมที่ 2</h3>
+                    <ul>
+                        <li>• วันจันทร์ - Chest Day</li>
+                        <li>• วันอังคาร - Back Day</li>
+                        <li>• วันพุธ - พัก</li>
+                        <li>• วันพฤหัสบดี - Shoulder Day</li>
+                        <li>• วันศุกร์ - Arm Day</li>
+                        <li>• วันเสาร์ - Leg Day</li>
+                        <li>• วันอาทิตย์ - พัก</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workout Days Section -->
+        <section class="workout-days">
+            <div class="day">
+                <h1 class="fade-in">Chest Day</h1>
+                <img src="Chest male normal.png" alt="Chest Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Back Day</h1>
+                <img src="Back male normal.png" alt="Back Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Shoulder Day</h1>
+                <img src="Shoulder male normal.png" alt="Shoulder Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Arm Day</h1>
+                <img src="Arm male normal.png" alt="Arm Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Legs Day</h1>
+                <img src="leg male normal.png" alt="Legs Workout">
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section class="nutrition">
+            <h1 class="fade-in">การกินอาหาร</h1>
+            <hr style="border: 1px solid #000000;">
+            <article class="nutrition-content">
+                <br>
+                <h2 class="fade-in">ผู้ที่ออกกำลังกายเพื่อสร้างกล้ามเนื้อ</h2>
+                <p class="fade-in">การรับประทานโปรตีนจะต้องเพิ่มขึ้น การคำนวณปริมาณโปรตีนที่เหมาะสำหรับการสร้างกล้ามเนื้อคือ ประมาณ 2-3 กรัมต่อน้ำหนักตัว 1 กิโลกรัม  เช่น น้ำหนักตัวคุณคือ  65 กิโลกรัม คุณจะต้องบริโภคโปรตีนประมาณ 120 กรัมต่อวัน</p>
+
+                <h2 class="fade-in">สำหรับนักเพาะกาย</h2>
+                <p class="fade-in">การสร้างกล้ามเนื้อจำเป็นต้องแบ่งอาหารอย่างเหมาะสมเป็นมื้อย่อย 6-8 มื้อต่อวัน นอกจากนี้ ควรรับประทานโปรตีนทุก 2-3 ชั่วโมง ประมาณ 30-50 กรัมต่อครั้ง โดยขึ้นอยู่กับน้ำหนักตัวของคุณ การแบ่งอาหารอย่างนี้จะช่วยให้ร่างกายมีโปรตีนที่เพียงพอตลอดวัน ช่วยในกระบวนการซ่อมแซมและสร้างกล้ามเนื้อได้อย่างมีประสิทธิภาพมากยิ่งขึ้น</p>
+                <img src="food1.png" alt="Healthy Food for Muscle Building">
+            </article>
+        </section>
+
+        <!-- Cristiano Ronaldo Tips -->
+        <section class="cris-tips">
+            <img src="cris.png" alt="Cristiano Ronaldo Workout Tips" class="idol-img" width="300" height="350">
+            <h1 class="fade-in">เคล็ดลับออกกำลังกายของ คริสเตียโน่ โรนัลโด้</h1>
+            <p class="fade-in">นอกจากเป็นนักฟุตบอลฝีมือฉกาจแล้ว โรนัลโด้ยังขยันออกกำลังกายมากๆ อีกด้วย นอกเหนือจากการฝึกซ้อมฟุตบอล เขามักจะเข้ายิมสัปดาห์ละ 5 วัน และใช้เวลาออกกำลังกายประมาณ 4-5 ชั่วโมง โดยเน้นการสร้างกล้ามเนื้อ ดังนี้</p>
+            <ul class="fade-in">
+                <li>ซิตอัพ 4-5 ครั้งต่อสัปดาห์ ครั้งละ 200-300 ที โดยสิ่งนี้สามารถทำได้ที่บ้าน ไม่จำเป็นต้องเข้ายิม</li>
+                <li>ฝึกการสร้างกล้ามเนื้อด้วยท่าเวตเทรนนิ่งต่าง ๆ เช่น planks, leg raises, quad rockets และ boat to low boats เพื่อสร้างความแข็งแรงของแกนกลางลำตัว</li>
+                <li>ออกกำลังกายด้วยการคาร์ดิโอ เพื่อช่วยเพิ่มการเผาผลาญ เช่น วิ่ง, ว่ายน้ำ, พายเรือ, พิลาทิส โดยต้องวอร์มอัพก่อนออกกำลังกายทุกครั้ง</li>
+                <li>พยายามผสมผสานการออกกำลังกายแบบคาร์ดิโอกับเวตเทรนนิ่งเข้าด้วยกัน เพื่อความแข็งแกร่งของร่างกาย</li>
+                <li>ออกกำลังกายแบบสลับ นั่นคือเน้นการออกกำลังกายหนัก ๆ สลับกับวันที่ออกกำลังกายแบบเบา ๆ เพื่อให้กล้ามเนื้อได้ฟื้นฟู</li>
+                <li>เข้าซาวน่า หรือแช่น้ำร้อน เพื่อให้กล้ามเนื้อได้ผ่อนคลายหลังจากออกกำลังกายหรือจบแมตช์การแข่งขัน</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100023801915148&locale=th_TH"><img src="QQHRTRGGSGO2C342014510.jpg" alt="Facebook Link" class="social-icon"></a>
+            <a href="https://www.instagram.com/losersigma/"><img src="ig logo.png" alt="Instagram Link" class="social-icon2"></a>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const options = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
+</body>
+</html>

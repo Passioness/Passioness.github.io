@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Program</title>
+    <link rel="stylesheet" href="styleBMIski(man).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script>
+    // Function to get query parameters from URL
+    function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Retrieve the BMI value from the URL
+        window.onload = function() {
+            const bmi = getQueryParameter('bmi');
+            if (bmi) {
+                document.getElementById('bmiResult').innerText = `ค่า BMI ของคุณคือ: ${bmi}`;
+            }
+        };
+        </script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="PasPage1.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+     <main>
+    <section class="banner">
+        <h1 id="bmiResult" class="fade-in"></h1>
+        <img src="workout skinny2.png" alt="Description of Image" class="bmi-image">
+        <div class="banner-text">
+            <h1 class="fade-in">ค่า BMI ของคุณ : ปกติ</h1>
+            <h2 class="fade-in">ตารางการสร้างกล้ามเนื้อ</h2>
+            <hr style="border: 1px solid #000000;">
+        </div>
+
+        <!-- Fitness Schedules -->
+        <div class="fitness-schedule">
+            <div class="program">
+                <h3 class="fade-in">ตารางฟิตเนส ผู้ชาย โปรแกรมที่ 1️</h3>
+                    <ul>
+                        <li>• วันจันทร์ - อก,ไหล่,ต้นแขนด้านหลัง</li>
+                        <li>• วันอังคาร - พัก</li>
+                        <li>• วันพุธ - หลัง,ปีก,ต้นแขนด้านหน้า,ท้อง</li>
+                        <li>• วันพฤหัสบดี - พัก</li>
+                        <li>• วันศุกร์ - พัก</li>
+                        <li>• วันเสาร์ - ต้นขาด้านหน้า,ต้นขาด้านหลัง,น่อง</li>
+                        <li>• วันอาทิตย์ - พัก</li>
+                    </ul>
+            </div>
+            <div class="program">
+                <h3 class="fade-in">ตารางฟิตเนส ผู้ชาย โปรแกรมที่ 2</h3>
+                    <ul>
+                        <li>• วันจันทร์ - ต้นขาด้านหน้า,ต้นขาด้านหลัง,น่อง</li>
+                        <li>• วันอังคาร - พัก</li>
+                        <li>• วันพุธ - อก,ต้นแขนด้านหลัง</li>
+                        <li>• วันพฤหัสบดี -พัก</li>
+                        <li>• วันศุกร์ -หลัง,ท้อง</li> 
+                        <li>• วันเสาร์ - ต้นแขนด้านหน้า,ไหล่</li>
+                        <li>• วันอาทิตย์ - พัก</li>
+                    </ul>
+            </div>
+            </div>
+    </section>
+
+     <!-- Workout Days Section -->
+      <section class="workout-days">
+        <div class="day">
+            <h1 class="fade-in">อก</h1>
+            <img src="อก.png" alt="Chest Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">ไหล่</h1>
+            <img src="ไหล่.png" alt="Shoulder Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">ปีก</h1>
+            <img src="ปีก.png" alt="Wing Workout">
+        </div>
+        <div class="day">
+         <h1 class="fade-in">ท้อง</h1>
+         <img src="ท้อง.png" alt="Tong Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">หลัง</h1>
+            <img src="หลัง.png" alt="Back Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">แขน</h1>
+            <img src="แขน.png" alt="Arm Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">ขา</h1>
+            <img src="ขา.png" alt="Leg Workout">
+        </div>
+        <div class="day">
+            <h1 class="fade-in">น่อง</h1>
+            <img src="น่อง.png" alt="Leg2 Workout">
+        </div>
+      </section>
+
+      <!-- Nutrition Section -->
+       <section class="nutrition">
+        <h1 class="fade-in">การกินอาหาร</h1>
+        <hr style="border: 1px solid #000000;">
+        <article class="nutrition-content">
+            <h2 class="fade-in">กินให้มากขึ้นและบ่อยขึ้นมากกว่าเดิม</h2>
+                <p>โดยปกติแล้วการกินที่ถูกต้องคือ ต้องกินอาหารให้ครบ 5 หมู่ แล้วให้ครบ 3 มื้อ แต่สำหรับคนผอมแห้งที่ต้องการสร้างหุ่นให้ดีนั้น ต้องเพิ่มการกินให้มากกว่าเดิม โดยเพิ่มมื้อรองเข้าไป เป็น 5-6 มื้อต่อวัน เน้นอาหารที่มีแคลอรี่สูงในทุก ๆ มื้อและห้ามลดปริมาณของมื้อหลักด้วย
+                    สิ่งที่ต้องเพิ่มการกินเข้าไปก็คือ อาหารชนิดที่มีโปรตีน และคาร์โบไฮเดรต เพื่อเพิ่มแคลอรี่ให้สูงขึ้น และควรจะกินปริมาณแคลอรี่ให้สูงขึ้นประมาณ 500 ต่อวัน</p>
+        
+                <h2 class="fade-in">กินเยอะแต่กินอาหารที่มีประโยชน์</h2>
+                    <p>กินอาหารเยอะแล้วไม่ใช่ว่าจะกินอะไรก็ได้ตามใจฉันนะครับ เพราะว่าหากกินอาหารที่ไม่มีประโยชน์และเน้นเพียงแค่การเพิ่มน้ำหนัก โรคอื่น ๆ อาจจะตามมาได้ ดังนั้นควรจะกินอาหารที่ดีและมีประโยชน์ด้วย โดยสัดส่วนที่ต้องกินนั้นคือ แป้ง 70 โปรตีน 15 ไขมัน 15 ดูอาหารได้จากข้อที่แล้วได้เลยครับ
+                        แต่สิ่งสำคัญที่สุดก็คือ ไม่ควรกินอาหารที่ให้โทษแก่ร่างกาย เช่น อาหารจำพวกหมักดอง เครื่องดื่มแอลกอฮอล์ หรือน้ำอัดลมชนิดต่างๆควรเลี่ยงให้มากที่สุด เพราะเป็นอาหารที่ทำลายสุขภาพ ควรย้ำเตือนตัวเองอยู่เสมอว่า ต้องเพิ่มน้ำหนักโดยที่เรามีสุขภาพที่ดี ไม่ควรจะรับผลเสียเข้ามาในร่างกาย
+                        ทริคการกินเพิ่มน้ำหนักง่าย ๆ คือ อย่าปล่อยหรือรอให้ท้องหิว, กินให้เร็วขึ้น, ห้ามดื่มน้ำก่อนกินข้าว เพียงแค่นี้ก็จะทำให้คุณน้ำหนักเพิ่มขึ้นได้แล้ว สำหรับคนผอมแห้ง ที่อยากมีสุขภาพดีต้องลอง</p>
+            
+                    <h2 class="fade-in">ใช้ตัวช่วยโดยอาหารเสริมวิตามินและเกลือแร่</h2>
+                        <p>การกินยาอาหารเสริม เช่น วิตามินและแร่ธาตุที่สามารถที่ช่วยเพิ่มความอยากอาหารได้ คือ วิตามินเอ และวิตามินบีรวม เพราะจะช่วยเร่งการเผาผลาญแป้ง ไขมัน โปรตีน เพื่อให้เป็นพลังงาน ดังนั้นผู้ที่ได้กินแล้วจะมีอาการหิวบ่อยขึ้น รวมถึงมีแคลเซียม แมกนีเซียม ทองแดง ซิงค์ บริเวอร์ยีสต์ อีกด้วย
+                            หรือจะเป็นโปรตีนเสริมอาหารอย่างเช่น เวย์โปรตีน (Whey Protien) ซึ่งโปรตีนประเภทนี้จะช่วยทำให้ร่างกายทำงานปกติ จากกรดอะมิโนช่วยสร้างฮอร์โมนและสร้างภูมิคุ้มกันด้วย นอกจากนั้นโปรตีนเสริมนี้ยังช่วยให้คนผอมแห้งมีพละกำลังเพิ่มขึ้นในการออกกำลังกาย
+                            และยังช่วยเสริมสร้างกล้ามเนื้อของร่างกายให้แข็งแรง ข้อควรระวังก็คือควรกินตามข้อจำกัด ให้เหมาะสมกับปริมาณโปรตีนที่ร่างกายต้องการของแต่ละช่วงวัยด้วย เพราะหากกินมากจนเกินไปหรือไม่ถูกวิธี อาจส่งผลเสียต่อไตได้</p>
+                        <img src="food2.png" alt="Healthy Food for Muscle Building">
+                    </article>
+       </section>
+
+       <!-- David laid Tips -->
+        <section class="david-tips">
+            <img src="idol skinny man.png" alt="David laid" class="idol-img">
+            <h1 class="fade-in">ตัวอย่างการออกกำลังกายของ david laid<hr style="border: 1px solid #000000;"></h1>
+            <h3 class="fade-in">DAY 1: CHEST AND TRICEPS</h3>
+            <ul>
+                <li>Bench Press: 4 sets of 8-12 reps</li>
+                <li>Incline Dumbbell Press: 4 sets of 8-12 reps</li>
+                <li>Cable Flyes: 3 sets of 12-15 reps</li>
+                <li>Tricep Dips: 3 sets to failure</li>
+                <li>Skull Crushers: 4 sets of 10-12 reps</li>
+                <li>Tricep Pushdowns: 3 sets of 12-15 reps</li>
+                <h3 class="fade-in">DAY 2: BACK AND BICEPS</h3>
+                <li>Deadlift: 4 sets of 6-10 reps</li>
+                <li>Pull-Ups: 4 sets to failure</li>
+                <li>Bent Over Rows: 4 sets of 8-12 reps</li>
+                <li>Seated Cable Rows: 3 sets of 12-15 reps</li>
+                <li>Barbell Curls: 4 sets of 10-12 reps</li>
+                <li>Hammer Curls: 3 sets of 12-15 reps</li>
+                <h3 class="fade-in">DAY 3: REST DAY OR ACTIVE RECOVERY</h3>
+                <li>Optional: Light cardio or stretching</li>
+                <h3 class="fade-in">DAY 4: SHOULDERS</h3>
+                <li>Overhead Press: 4 sets of 8-12 reps</li>
+                <li>Side Lateral Raises: 4 sets of 12-15 reps</li>
+                <li>Front Raises: 3 sets of 12-15 reps</li>
+                <li>Rear Delt Flyes: 3 sets of 12-15 reps</li>
+                <li>Shrugs: 4 sets of 10-12 reps</li>
+                <h3 class="fade-in">DAY 5: LEGS</h3>
+                <li>Squats: 4 sets of 6-10 reps</li>
+                <li>Leg Press: 4 sets of 12-15 reps</li>
+                <li>Leg Curls: 3 sets of 12-15 reps</li>
+                <li>Leg Extensions: 3 sets of 12-15 reps</li>
+                <li>Calf Raises: 4 sets of 15-20 reps</li>
+                <h3 class="fade-in">DAY 6: CHEST AND BACK</h3>
+                <li>Incline Bench Press: 4 sets of 8-12 reps</li>
+                <li>Weighted Pull-Ups: 4 sets to failure</li>
+                <li>Flat Dumbbell Press: 4 sets of 8-12 reps</li>
+                <li>T-Bar Rows: 4 sets of 8-12 reps</li>
+                <li>Cable Crossovers: 3 sets of 12-15 reps</li>
+                <li>Face Pulls: 3 sets of 12-15 reps</li>
+                <h3 class="fade-in">DAY 7: REST DAY OR ACTIVE RECOVERY</h3>
+                <li>Optional: Light cardio or stretching</li>
+            </ul>
+            <h1 class="fade-in">ตัวอย่างการกินอาหารของ david laid<hr style="border: 1px solid #000000;"></h1>
+            <ul>
+                <h3 class="fade-in">MEAL 1: BREAKFAST</h3>
+                <li>Oats: 1 cup with almond milk</li>
+                <li>Egg Whites: 6-8</li>
+                <li>Banana: 1</li>
+                <h3 class="fade-in">MEAL 2: MID-MORNING SNACK</h3>
+                <li>Greek Yogurt: 1 cup</li>
+                <li>Mixed Berries: 1/2 cup</li>
+                <li>Almonds: A handful</li>
+                <h3 class="fade-in">MEAL 3: LUNCH</h3>
+                <li>Grilled Chicken Breast: 200 grams</li>
+                <li>Quinoa: 1 cup</li>
+                <li>Mixed Vegetables: 1-2 cups</li>
+                <h3 class="fade-in">MEAL 4: PRE-WORKOUT SNACK</h3>
+                <li>Protein Shake: 1 scoop of whey protein</li>
+                <li>Rice Cakes: 2-3</li>
+                <h3 class="fade-in">MEAL 5: POST-WORKOUT</h3>
+                <li>Protein Shake: 1 scoop of whey protein</li>
+                <li>Banana: 1</li>
+                <h3 class="fade-in">MEAL 6: DINNER</h3>
+                <li>Salmon or Lean Beef: 200 grams</li>
+                <li>Sweet Potato: 1 medium</li>
+                <li>Steamed Broccoli: 1-2 cups</li>
+                <h3 class="fade-in">MEAL 7: EVENING SNACK</h3>
+                <li>Cottage Cheese: 1 cup</li>
+                <li>Almond Butter: 1 tablespoon</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100023801915148&locale=th_TH"><img src="QQHRTRGGSGO2C342014510.jpg" alt="Facebook Link" class="social-icon"></a>
+            <a href="https://www.instagram.com/losersigma/"><img src="ig logo.png" alt="Instagram Link" class="social-icon2"></a>
+        </div>
+    </footer>
+        
+    <!-- Intersection Observer Script -->
+        <script>
+             const faders = document.querySelectorAll('.fade-in');
+        const options = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => observer.observe(fader));
+        </script>
+</body>
+
+</html>

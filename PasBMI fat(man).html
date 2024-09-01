@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Program</title>
+    <link rel="stylesheet" href="styleBMIfat(man).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Retrieve the BMI value from the URL
+        window.onload = function() {
+            const bmi = getQueryParameter('bmi');
+            if (bmi) {
+                document.getElementById('bmiResult').innerText = `ค่า BMI ของคุณคือ: ${bmi}`;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="PasPage1.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 id="bmiResult" class="fade-in"></h1>
+            <img src="fat above.png" alt="BMI Status Image" class="bmi-image">
+            <div class="banner-text">
+                <h1 class="fade-in">ค่า BMI ของคุณ : อ้วน</h1>
+                <h2 class="fade-in">ตารางการสร้างกล้ามเนื้อ</h2>
+                <hr style="border: 1px solid #000000;">
+            </div>
+
+            <!-- Fitness Schedules -->
+            <div class="fitness-schedule">
+                <div class="program">
+                    <h3 class="fade-in">ตารางฟิตเนส ผู้ชาย/ผู้หญิงโปรแกรมที่ 1️</h3>
+                    <ul>
+                        <li>• วันอาทิตย์: เดินออกกำลังกายแบบเร็ว 60 นาที (เน้นการเดินเร็ว)</li>
+                        <li>• วันจันทร์: วันพักฟื้น (งดเดินออกกำลังกาย แต่คุณสามารถทำกิจกรรมเบาๆ ได้ เช่น ยืดเหยียดร่างกาย)</li>
+                        <li>• วันอังคาร: เดินออกกำลังกายแบบเร็ว 30 นาที (เน้นการเดินเร็ว) + เวทเทรนนิ่ง</li>
+                        <li>• วันพุธ: เดินออกกำลังกายแบบเร็ว 30 นาที (เน้นการเดินเร็ว)</li>
+                        <li>• วันพฤหัสบดี: เดินออกกำลังกายแบบเร็ว 60 นาที (เน้นการเดินเร็ว)</li>
+                        <li>• วันศุกร์: เดินออกกำลังกายแบบเร็ว 30 นาที (เน้นการเดินเร็ว) + เวทเทรนนิ่ง</li>
+                        <li>• วันเสาร์: เดินออกกำลังกายแบบสบาย 30 นาที (เน้นการเดินเร็ว) + เดินต่อเนื่องแบบช้า 30-90 นาที (ปรับตามความต้องการ)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section class="nutrition">
+            <h1 class="fade-in">การกินอาหาร</h1>
+            <hr style="border: 1px solid #000000;">
+            <article class="nutrition-content">
+                <h2 class="fade-in">เลือกกินอาหารที่แคลอรี่สูงและมีประโยชน์</h2>
+                <p class="fade-in">กลุ่มธัญพืช(โปรตีนสูง):อัลมอนด์ วอลนัท ถั่วมะคาเดเมีย พีนัท ข้าวโอ๊ตหรือข้าวกล้อง</p>
+
+                <p class="fade-in"> กลุ่มอาหารโปรตีนสูง: เนื้อ ไก่ หมูส่วนอก สันนอก สันใน ส่วนติดมัน</p>
+
+                <p class="fade-in"> กลุ่มไขมันไม่อิ่มตัว: น้ำมันมะกอก น้ำมันมะพร้าว อะโวคาโด กลุ่มผลิตภัณฑ์นม: นม โยเกิร์ตสูตร Full-Fat ชีสและครีม</p>
+                <img src="fat food.png" alt="Healthy Food for Muscle Building">
+            </article>
+        </section>
+
+        <!-- yang soo bin Tips -->
+        <section class="Yang-tips">
+            <img src="fat idol.png" alt="yang soo bin Workout Tips" class="idol-img" width="300" height="350">
+            <h1 class="fade-in">ตารางออกกำลังกาย ลดน้ำหนักซูบิน</h1>
+            <ul class="fade-in">
+                <li>Chest Touch Push-ups เล่นเซตละ 15 ครั้ง 2 เซต</li>
+                <li>Stand Side Bend เล่นเซตละ 15 ครั้ง 2 เซต</li>
+                <li>Step Box เล่นเซตละ 20 ครั้ง 2 เซต</li>
+                <li>Dumbbell Squat (10 kg.) เล่นเซตละ 30 ครั้ง 2 เซต</li>
+                <li>Step Box Speed เล่นเซตละ 40 ครั้ง 1 เซต</li>
+                <li>Leg Lifts เล่นเซตละ 15 ครั้ง 2 เซต</li>
+                <li>Step Box Side เล่นเซตละ 30 ครั้ง 1 เซต</li>
+                <li>Tip 1 : กระตุ้นตัวเองให้ออกกำลังกาย ด้วยการสมัครสมาชิกฟิตเนส</li>
+                <li>Tip 2 : แบ่งมื้ออาหารให้ชัดเจน</li>
+                <li>Tip 3 : ลด ละ เลิก อาหารฟาสต์ฟู้ด</li>
+                <li>Tip 4 : ตั้งเป้าหมายระยะสั้น</li>
+                <li>Tip 5 : เคลื่อนไหวร่างกายให้บ่อยขึ้น</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100023801915148&locale=th_TH"><img src="QQHRTRGGSGO2C342014510.jpg" alt="Facebook Link" class="social-icon"></a>
+            <a href="https://www.instagram.com/losersigma/"><img src="ig logo.png" alt="Instagram Link" class="social-icon2"></a>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const options = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
+</body>
+</html>

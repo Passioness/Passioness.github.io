@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: #191818;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background: #333;
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #012e29;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #191818;
+    padding: 50px 20px;
+}
+
+.banner .text1 {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.banner .text1 h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    animation: fadeIn 2s ease-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}

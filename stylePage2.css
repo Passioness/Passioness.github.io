@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: #191818;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 0px;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    padding: 35px 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.navbar .logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #012e29;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Main Banner */
+.banner {
+    text-align: left;
+    padding: 40px 0;
+    background-color:#191818 ;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.bmi-image {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bmiresult {
+    margin-top: 20px;
+}
+
+.banner-text {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 30;
+}
+
+.banner-text input{
+    margin-top: 20px;
+    color:#000000;
+    font-size: 25;
+}
+
+.banner-text button{
+    margin-top: 20px;
+    color: #000000;
+    font-size: 20;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

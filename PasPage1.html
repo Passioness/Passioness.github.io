@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passioness - Reach Your Goals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <img src="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" class="logo" alt="Passioness Logo">
+            <ul>
+                <li><a href="PasPage1.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <!-- Main Content -->
+        <div class="content">
+            <h1 class="fade-in">Reach your goals</h1>
+            <h3 class="fade-in">With Passioness</h3>
+            <p class="fade-in">Build healthy habits with exercise</p>
+            <div>
+                <a href="PasPage2.html"><button type="button"><span>START</span></button></a>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="picture1">
+            <img src="555.png" alt="Motivational Image" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- JavaScript for Fade-in Effect -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const options = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
+</body>
+
+</html>

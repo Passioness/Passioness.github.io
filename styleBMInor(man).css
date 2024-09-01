@@ -1,0 +1,217 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: #b8b2b2;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 0px;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    padding: 35px 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f0a500;
+}
+
+/* Main Banner */
+.banner {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.bmi-image {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bmiresult {
+    margin-top: 20px;
+}
+
+.banner-text {
+    margin-top: 20px;
+}
+
+.fitness-schedule {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.workout-image {
+    max-width: 100%;
+    border-radius: 0px;
+}
+
+.program {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.program ul {
+    list-style-type: none;
+}
+
+.program h3 {
+    margin-bottom: 10px;
+}
+
+/* Workout Days */
+.workout-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.day {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align:left;
+}
+
+.day img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Nutrition Section */
+.nutrition {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: left;
+}
+
+.nutrition-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.nutrition img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+/* Cristiano Ronaldo Tips */
+.cris-tips {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.idol-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px; 
+}
+
+.cris-tips h1 {
+    margin-bottom: 20px;
+}
+/* Footer */
+.footer {
+    background: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 150px;
+    transition: transform 0.3s;
+    max-width: 100%;
+}
+
+.social-icon2 {
+    width: 150px;
+    transition: transform 0.3s;
+    margin:10px;
+    max-width: 100%;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon2:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Program</title>
+    <link rel="stylesheet" href="styleBMInor(female).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        // Function to get query parameters from URL
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Retrieve the BMI value from the URL
+        window.onload = function() {
+            const bmi = getQueryParameter('bmi');
+            if (bmi) {
+                document.getElementById('bmiResult').innerText = `ค่า BMI ของคุณคือ: ${bmi}`;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <img src="ดีไซน์ที่ยังไม่ได้ตั้งชื่อ (1).png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="PasPage1.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 id="bmiResult" class="fade-in"></h1>
+            <img src="Female workout normal.img" alt="BMI Status Image" class="bmi-image">
+            <div class="banner-text">
+                <h1 class="fade-in">ค่า BMI ของคุณ : ปกติ</h1>
+                <h2 class="fade-in">ตารางการสร้างกล้ามเนื้อ</h2>
+                <hr style="border: 1px solid #000000;">
+            </div>
+
+            <!-- Fitness Schedules -->
+            <div class="fitness-schedule">
+                <div class="program">
+                    <img src="female workout.png" alt="Workout program" class="workout-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Workout Days Section -->
+        <section class="workout-days">
+            <div class="day">
+                <h1 class="fade-in">Dumbbell Lunge<hr>
+                    ก้าวเท้าไปด้านหน้าหนึ่งข้าง แล้วย่อตัวลง</h1>
+                <img src="lunge.png" alt="Chest Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Dumbbell Squat<hr>
+                    ย่อตัวลงทิ้งก้นไปด้านหลัง พร้อมกับทิ้งดัมเบลลงด้านหน้า</h1>
+                <img src="Squat.png" alt="Back Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Dumbbell Bent Over Row<hr>ย่อเข่า ก้มตัวไปด้านหน้า งอศอก ดึงแขนที่ถือดัมเบลไปด้านหลังให้ต้นแขนขนานกับพื้น</h1>
+                <img src="over-row.png" alt="Shoulder Workout">
+            </div>
+            <div class="day">
+                <h1 class="fade-in">Kneeling Single Arm Raise<hr>นอนคว่ำ ยกแขนที่ถือดัมเบลขึ้นขนานกับพื้น</h1>
+                <img src="arm raise.jpg" alt="Arm Workout">
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section class="nutrition">
+            <h1 class="fade-in">การกินอาหาร</h1>
+            <hr style="border: 1px solid #000000;">
+            <article class="nutrition-content">
+                <p class="fade-in"><br>
+                    อาหารสำหรับสาว ๆ ที่อยากเสริมสร้างกล้ามเนื้อ
+                    ไข่: เป็นแหล่งโปรตีนที่ดีและเป็นที่นิยมในการเสริมสร้างกล้ามเนื้อ
+                    โดยเฉพาะไข่ไก่ที่มีไขมันต่ำกว่าไข่เป็ด ปลา: เป็นแหล่งโปรตีน
+                    ที่มีคุณภาพสูงและอีกหนึ่งอย่างที่สำคัญคือมีกรดไขมันอิ่มตัว
+                    (omega-3) ซึ่งช่วยลดการอักเสบและส่งเสริมการสร้างกล้ามเนื้อ</p>
+
+                <p class="fade-in">การบริโภคโปรตีนเป็นสารอาหารที่สำคัญสำหรับการสร้างกล้ามเนื้อ
+                    ในร่างกายแต่ต้องระมัดระวังว่าไม่ควรกินเกินจนเกินพลังงานที่ร่างกาย
+                    ต้องการ เพราะอาจทำให้ไขมัน สะสมในร่างกาย สูตรสำหรับการกินโปร
+                    ตีนที่เหมาะสมคือใช้สูตร 1 x น้ำหนักตัวเป็นกิโลกรัม = โปรตีน (กรัม)
+                    โดยโปรตีนสามารถหาได้จากอาหารหลายชนิด โดยในเนื้อสัตว์จะมีโปร
+                    ตีนอยู่ประมาณ 26 กรัมต่อ 100 กรัมของเนื้อ ดังนั้นหากต้องการ
+                    สร้างกล้ามเนื้อและควบคุมน้ำหนักตัวให้เหมาะสม ควรรับประทาน
+                    โปรตีน อย่างเพียงพอและไม่เกินไป</p>
+                <img src="food1.png" alt="Healthy Food for Muscle Building">
+            </article>
+        </section>
+
+        <!-- Cristiano Ronaldo Tips -->
+        <section class="lisa-tips">
+            <img src="lisa.img" alt="lisa Workout Tips" class="idol-img" width="300" height="350">
+            <h1 class="fade-in">ลิซ่า - ดีท็อกซ์และออกกำลังกายทุกวัน</h1>
+            <p class="fade-in">นอกจากเป็นนักฟุตบอลฝีมือฉกาจแล้ว โรนัลโด้ยังขยันออกกำลังกายมากๆ อีกด้วย นอกเหนือจากการฝึกซ้อมฟุตบอล เขามักจะเข้ายิมสัปดาห์ละ 5 วัน และใช้เวลาออกกำลังกายประมาณ 4-5 ชั่วโมง โดยเน้นการสร้างกล้ามเนื้อ ดังนี้</p>
+            <ul class="fade-in">
+                <li>ซิตอัพ 4-5 ครั้งต่อสัปดาห์ ครั้งละ 200-300 ที โดยสิ่งนี้สามารถทำได้ที่บ้าน ไม่จำเป็นต้องเข้ายิม</li>
+                <li>ฝึกการสร้างกล้ามเนื้อด้วยท่าเวตเทรนนิ่งต่าง ๆ เช่น planks, leg raises, quad rockets และ boat to low boats เพื่อสร้างความแข็งแรงของแกนกลางลำตัว</li>
+                <li>ออกกำลังกายด้วยการคาร์ดิโอ เพื่อช่วยเพิ่มการเผาผลาญ เช่น วิ่ง, ว่ายน้ำ, พายเรือ, พิลาทิส โดยต้องวอร์มอัพก่อนออกกำลังกายทุกครั้ง</li>
+                <li>พยายามผสมผสานการออกกำลังกายแบบคาร์ดิโอกับเวตเทรนนิ่งเข้าด้วยกัน เพื่อความแข็งแกร่งของร่างกาย</li>
+                <li>ออกกำลังกายแบบสลับ นั่นคือเน้นการออกกำลังกายหนัก ๆ สลับกับวันที่ออกกำลังกายแบบเบา ๆ เพื่อให้กล้ามเนื้อได้ฟื้นฟู</li>
+                <li>เข้าซาวน่า หรือแช่น้ำร้อน เพื่อให้กล้ามเนื้อได้ผ่อนคลายหลังจากออกกำลังกายหรือจบแมตช์การแข่งขัน</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100023801915148&locale=th_TH"><img src="QQHRTRGGSGO2C342014510.jpg" alt="Facebook Link" class="social-icon"></a>
+            <a href="https://www.instagram.com/losersigma/"><img src="ig logo.png" alt="Instagram Link" class="social-icon2"></a>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const options = { threshold: 0.5 };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
+</body>
+</html>
